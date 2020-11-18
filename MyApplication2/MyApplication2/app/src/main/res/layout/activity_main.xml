@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d8e0e8"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#33B5E5"
+        android:gravity="center"
+        android:text="CHATTING"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <ListView
+        android:id="@+id/msg_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#0000">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/loc"
+            android:scaleType="centerInside"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/map"
+            android:contentDescription="Location"/>
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="2"
+            />
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"/>
+
+        <ImageButton
+            android:id="@+id/upload"
+            android:scaleType="centerInside"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/photo"
+            android:contentDescription="Upload"/>
+
+    </LinearLayout>
+    <!-- 用于测试的Text组件-->
+    <!--TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /-->
+
+</LinearLayout>
